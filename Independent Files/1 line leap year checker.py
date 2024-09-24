@@ -1,0 +1,1 @@
+print('Yes it is a leap year.' if int(input('Year: ')) % 4 == 0 else "No it isn't a leap year")

@@ -1,0 +1,34 @@
+INFO
+
+ALL ENVIRONMENTS
+Grassland - easy to move through, limited supplies
+Water - need ships, limited supplies
+Sand - easy to build on, some supplies
+Forest - good supplies and increased defense for troops, but decreased offensive ability, harder 
+to move through.
+Mountain - need special equipment to enter, hard to move through, supplies like metals and 
+stone in high supply, high defense
+Snowy Mountain - need special equipment to enter,  hard to move through, highest resource 
+availability, rare resources found here, cannot build anything here.
+Snow - need special equipment to enter, some supplies
+
+
+BUILDINGS
+
+Home Base - need to defend, if destroyed you lose
+Barracks - Train Troops
+Farm - Gather food to supply troops
+Shipyard - build ships, must be placed next to water
+Trenches - increase troop defense
+Bunkers - stronger defense than trenches
+Vehicle Creation Building - creates vehicles
+Research facility - research new things
+Factory - Creates certain researched objects from the research facility.
+
+TROOPS
+Rifleman - standard units, firing range 1, transport range 1
+Sniper -  firing range 2, transport range 1
+Machine gunner -  firing range 1, transport range 1
+Scout - firing range 1, transport range 2
+Worker - firing range 0, transport range 1, more effective at building and material transport.
+Special ops - firing range 2, transport range 2, expensive to train

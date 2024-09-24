@@ -1,0 +1,47 @@
+var ticTacToe = [['_', '_', '_'], ['_', '_', '_'], ['_', '_', '_']]
+var playing = true
+var currentPlayer = 1
+var winner = ''
+while (playing){
+    showBoard();
+    if (winner != ''){
+        alert('Winner is someone \n'ticTacToe[0]+'\n'+ticTacToe[1]+'\n'+ticTacToe[2]);
+    }
+    choice = prompt('Choose spot');
+    if (choice == 'stop'){
+        playing = false
+    }else{
+        if (currentPlayer==1){
+            if (choice[0] < 3 && choice[1] < 3){
+                if (ticTacToe[choice[0]][choice[1]] == '_'){
+                    ticTacToe[choice[0]][choice[1]] = 'X'
+                    currentPlayer = 2
+                }
+            }
+        }else if(currentPlayer==2){
+            if (choice[0] < 3 && choice[1] < 3){
+                if (ticTacToe[choice[0]][choice[1]] == '_'){
+                    ticTacToe[choice[0]][choice[1]] = 'O'
+                    currentPlayer = 1
+                }
+            }
+        }
+        checkWinner();
+    }
+}
+function showBoard(){
+    alert(ticTacToe[0]+'\n'+ticTacToe[1]+'\n'+ticTacToe[2]);
+}
+function checkWinner(icon){
+    for (let i = 0; i<ticTacToe.length;i++){
+        var icon_total = 0
+        for (let int = 0; int<ticTacToe[i].length;int++){
+            if (ticTacToe[int]==icon){
+                icon_total += 1
+            }
+        if (icon_total == 3) {
+            winner = icon
+        }
+        }
+    }
+}
